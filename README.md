@@ -4,6 +4,6 @@ This repository is a prototype for a calendar-app created in Graphic Design's We
 
 ## Team members
 
-Kelly Miles: Project Manager <https://github.com/100Miles>
-Tessa Sherin-Snidal: UX Lead <https://github.com/tessasherinsnidal>
-Max Tillotson: Dev Lead <https://github.com/MaxTillotson>
+- Kelly Miles <https://github.com/100Miles>
+- Tessa Sherin-Snidal <https://github.com/tessasherinsnidal>
+- Max Tillotson <https://github.com/MaxTillotson>
