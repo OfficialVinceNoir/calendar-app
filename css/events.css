@@ -130,3 +130,44 @@ input:checked + .slider:before {
 .dropdown-content a:hover {background-color: rgba(100,100,100,.5)}
 
 .show {display:block;}
+
+/* Page Style*/
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.cancel {
+
+}
+
+.save:focus, .cancel:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.save:hover, .cancel:hover {
+  opacity: .5;
+}
+
+header {
+  background-color: #3F51B5;
+}
+
+input {
+  background-color: inherit;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.title {
+  color: white;
+}
+
+.title:hover {
+  cursor: pointer;
+}
