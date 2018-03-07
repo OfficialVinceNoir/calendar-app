@@ -10,6 +10,64 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-
+  <div class="grid max-length">
+    <section class="unit xs-1 text-center">
+      <div class="absolute pin-c mySlides slide1">
+        <div class="block text-left push-2">
+          <a class="" href="start.html">
+            <img class="back-arrow" src="images/arrow-back.svg" alt="">
+          </a>
+        </div>
+        <h2 class="push-1-2">How would you like
+your start-up view?</h2>
+        <div class="push-2">
+          <input type="radio" name="start" value="Month"> Month<br>
+          <input type="radio" name="start" value="Week"> Week<br>
+          <input type="radio" name="start" value="Day"> Day
+        </div>
+        <a class="btn" onclick="plusDivs(1)">NEXT</a>
+      </div>
+      <div class="absolute pin-c mySlides slide2">
+        <div class="block text-left push-2">
+          <a class="" onclick="plusDivs(-1)">
+            <img class="back-arrow" src="images/arrow-back.svg" alt="">
+          </a>
+        </div>
+        <h2 class="push-1-2">What is your colour theme?</h2>
+        <select class="push-2">
+          <option disabled selected value="">Select a colour theme</option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+        <a class="btn" onclick="plusDivs(1)">NEXT</a>
+      </div>
+      <div class="absolute pin-c mySlides slide3">
+        <div class="block text-left push-2">
+          <a class="" onclick="plusDivs(-1)">
+            <img class="back-arrow" src="images/arrow-back.svg" alt="">
+          </a>
+        </div>
+        <h2 class="push-1-2">What day would you like your week to start on?</h2>
+        <select class="push-2">
+          <option disabled selected value="">Select a day</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+        </select>
+        <a href="month.html" class="btn" onclick="plusDivs(1)">NEXT</a>
+      </div>
+    </section>
+  </div>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
