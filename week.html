@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Week</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
@@ -20,7 +21,36 @@
       <a href="month.html">Month</a>
       <a href="week.html">Week</a>
       <a href="day.html">Day</a>
-      <a href="#">Settings</a>
+      <hr>
+      <div class="dropdown">
+      <btn class="dropbtn" onclick="myFunction()">Theme
+        <i class="fa fa-caret-down"></i>
+      </btn>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="day.html" class="red"></a>
+        <a href="day.html" class="pink"></a>
+        <a href="day.html" class="purple"></a>
+        <a href="day.html" class="indigo"></a>
+        <a href="day.html" class="teal"></a>
+        <a href="day.html" class="green"></a>
+        <a href="day.html" class="yellow"></a>
+        <a href="day.html" class="orange"></a>
+      </div>
+      </div>
+      <div class="dropdown">
+      <btn class="dropbtn" onclick="myFunction1()">Start of Week
+        <i class="fa fa-caret-down"></i>
+      </btn>
+      <div class="dropdown-content" id="myDropdown1">
+        <a href="week.html">Monday</a>
+        <a href="week.html">Tuesday</a>
+        <a href="week.html">Wednesday</a>
+        <a href="week.html">Thursday</a>
+        <a href="week.html">Friday</a>
+        <a href="week.html">Saturday</a>
+        <a href="week.html">Sunday</a>
+      </div>
+      </div>
     </div>
 
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -44,16 +74,45 @@
 
 </footer>
 <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,.5)";
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,.5)";
 
-  }
+}
 
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.body.style.backgroundColor = "white";
-  }
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "white";
+}
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+}
+}
+
+
+
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+  var myDropdown1 = document.getElementById("myDropdown1");
+    if (myDropdown1.classList.contains('show')) {
+      myDropdown1.classList.remove('show');
+    }
+}
+}
+
 </script>
 </body>
 </html>

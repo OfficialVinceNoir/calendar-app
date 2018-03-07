@@ -50,7 +50,7 @@ html {
   padding-top: 60px;
 }
 
-.sidenav a {
+.sidenav a, .dropbtn, .dropdown-content {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -59,8 +59,8 @@ html {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  color: #3F51B5;
 }
 
 .sidenav .closebtn {
@@ -71,8 +71,79 @@ html {
   margin-left: 50px;
 }
 
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.show {
+    display: block;
+}
+
 h1 {
   display: inline;
+}
+
+.red {
+  background-color: #F44336;
+}
+
+.pink {
+  background-color: #E91E63;
+}
+
+.purple {
+  background-color: #9C27B0;
+}
+
+.indigo {
+  background-color: #3F51B5;
+}
+
+.teal {
+  background-color: #009688;
+}
+
+.green {
+  background-color: #4CAF50;
+}
+
+.yellow {
+  background-color: #FFEB3B;
+}
+
+.orange {
+  background-color: #FF9800;
 }
 
 .days, .week {
@@ -94,7 +165,6 @@ h1 {
   width: 3rem;
   height: 3rem;
 }
-
 
 @media screen and (max-width: 290px) {
     .weekdays li, .days li {width: 12.2%;}
