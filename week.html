@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Week</title>
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="wrapper">
+  <header class="container">
+
+    <div id="mySidenav" class="sidenav">
+      <div>
+        <h1>Calendart</h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </div>
+      <a href="month.html">Month</a>
+      <a href="week.html">Week</a>
+      <a href="day.html">Day</a>
+      <a href="#">Settings</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <h1>This Week</h1>
+
+  </header>
+  <main>
+    <h1>January</h1>
+    <ul class="week list-group">
+      <li>12<br>M</li>
+      <li>13<br>T</li>
+      <li>14<br>W</li>
+      <li>15<br>T</li>
+      <li>16<br>F</li>
+      <li>17<br>S</li>
+      <li>18<br>S</li>
+    </ul>
+
+  </main>
+<footer>
+
+</footer>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,.5)";
+
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+</body>
+</html>
