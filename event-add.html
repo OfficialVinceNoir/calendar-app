@@ -4,62 +4,77 @@
   <meta charset="utf-8">
   <title>Add Event</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/events.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="">
     <div class="">
-      <i><a href="#">close icon</a></i>
+      <i class="closebtn">&times;</i>
       <a href="#">Save</a>
     </div>
-    <h1><a href="#">Enter Event Title</a></h1>
+    <input type="text" name="event-title" value="Enter Event Title">
   </header>
 
   <main>
     <div class="">
-      <div class="">
-        <i><a href="#">event icon</a></i>
-        <div class="">
-          <div class="">
-            <span>Start-Time:</span>
-            <a href="#">Thursday, Feb 13</a>
-            <a href="#">7:00pm</a>
-          </div>
-          <div class="">
-            <span>End-Time:</span>
-            <a href="#">Thursday, Feb 13</a>
-            <a href="#">8:00pm</a>
-          </div>
-          <div class="">
-            <span>All day:</span>
-            <i><a href="#">off</a></i>
-          </div>
+      <i><img src="images/ic_event_black_24px.svg" alt="event icon"></i>
+      <form>
+        <div>
+          <label for="start-time">Start-time:</label>
+          <input type="date" id="start-date" name="start-date">
+          <input type="time" name="start-time" id="start-time">
         </div>
-      </div>
-
-      <div class="">
-        <i><a href="#">alarm icon</a></i>
-        <div class="">
-          <a href="#">15 minutes before</a>
-          <i><a href="#">add</a></i>
+        <div>
+          <label for="end-time">End-time:</label>
+          <input type="date" id="end-date" name="end-date">
+          <input type="time" name="end-time" id="end-time">
         </div>
-      </div>
-
-      <div class="">
-        <i><a href="#">location</a></i>
-        <i><a href="#">add</a></i>
-      </div>
-
-      <div class="">
-        <i><a href="#">colour circle</a></i>
         <div class="">
-          <a href="#">Choose colour</a>
+          <label class="switch">All day:
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
         </div>
+      </form>
+    </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn" style="background-color:#3F51B5;"></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="a" href="#"></a>
+        <a class="b" href="#"></a>
+        <a class="c" href="#"></a>
+        <a class="d" href="#"></a>
+        <a class="e" href="#"></a>
+        <a class="f" href="#"></a>
+        <a class="g" href="#"></a>
+        <a class="h" href="#"></a>
+        <a class="i" href="#"></a>
+        <a class="j" href="#"></a>
       </div>
     </div>
 
   </main>
+<script type="text/javascript">
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
 
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  }
+</script>
 
 </body>
 </html>
