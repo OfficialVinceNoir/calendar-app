@@ -90,6 +90,11 @@ h1 {
     padding-top: 20px;
 }
 
+.back-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
 
 @media screen and (max-width: 290px) {
     .weekdays li, .days li {width: 12.2%;}

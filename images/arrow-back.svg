@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1999 -705 35.89 35.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+        opacity: 0.54;
+      }
+    </style>
+  </defs>
+  <g id="ic_arrow_back" transform="translate(-2120 -783)">
+    <rect id="rectangle" class="cls-1" width="35.89" height="35.89" transform="translate(121 78)"/>
+    <path id="path" class="cls-2" d="M27.927,14.468H9.683l8.374-8.374L15.963,4,4,15.963,15.963,27.927l2.094-2.094L9.683,17.459H27.927V14.468Z" transform="translate(122.982 79.982)"/>
+  </g>
+</svg>
