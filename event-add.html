@@ -15,8 +15,8 @@
   <header class="pad-t-2 pad-b-2 gutter">
     <div class="header">
       <div class="pad-b">
-        <a href="" class="cancel yotta">&times;</a>
-        <a class="right mega save" href="#">SAVE</a>
+        <a onclick="goBack()" class="cancel yotta">&times;</a>
+        <a onclick="goBack()" class="right mega save" href="#">SAVE</a>
       </div>
       <input class="title yotta" type="text" name="event-title" value="Enter Event Title">
     </div>
@@ -96,6 +96,10 @@
     }
   }
   }
+
+  function goBack() {
+    window.history.back();
+}
 </script>
 
 </body>
