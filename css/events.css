@@ -1,3 +1,7 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Toggle Switch */
 .switch {
   position: relative;
