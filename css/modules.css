@@ -478,7 +478,7 @@ svg.img-flex {
 }
 
 .fixed {
-  position: fixed;
+  position: fixed!important;
 }
 
 .relative {
