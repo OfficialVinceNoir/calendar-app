@@ -166,7 +166,7 @@ h1 {
 }
 
 .days li {
-  height: 100px;
+  height: 120px;
 }
 
 .days li, .week li {
@@ -175,7 +175,7 @@ h1 {
     text-align: center;
     margin: 0px;
     font-size:12px;
-    color: #777;
+    color: black;
     padding-top: 20px;
     border: 1px solid black;
 }
@@ -186,7 +186,7 @@ h1 {
   text-align: center;
   margin: 0px;
   font-size:12px;
-  color: #777;
+  color: black;
   padding-top: 20px;
 }
 
@@ -242,6 +242,10 @@ h1 {
 .back-arrow {
   width: 3rem;
   height: 3rem;
+}
+
+.gray {
+  color: gray;
 }
 
 @media screen and (max-width: 290px) {
