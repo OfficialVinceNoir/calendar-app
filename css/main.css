@@ -166,7 +166,7 @@ h1 {
 }
 
 .days li {
-  height: 100px;
+  height: 120px;
 }
 
 .days li, .week li {
@@ -175,7 +175,7 @@ h1 {
     text-align: center;
     margin: 0px;
     font-size:12px;
-    color: #777;
+    color: black;
     padding-top: 20px;
     border: 1px solid black;
 }
@@ -186,7 +186,7 @@ h1 {
   text-align: center;
   margin: 0px;
   font-size:12px;
-  color: #777;
+  color: black;
   padding-top: 20px;
 }
 
@@ -196,6 +196,33 @@ h1 {
   font-size:12px;
   color: #777;
   padding: 20px;
+}
+
+.l-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #9FA8DA;
+    border-radius: 50%;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.m-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #3F51B5;
+    border-radius: 50%;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.d-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #1A237E;
+    border-radius: 50%;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .plus {
@@ -215,6 +242,10 @@ h1 {
 .back-arrow {
   width: 3rem;
   height: 3rem;
+}
+
+.gray {
+  color: gray;
 }
 
 @media screen and (max-width: 290px) {
