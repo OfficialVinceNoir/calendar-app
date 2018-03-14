@@ -37,6 +37,16 @@ html {
   box-sizing: inherit;
 }
 
+.condensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.big-number{
+  font-size: 4.2148rem;
+  line-height: 3.625rem;
+  letter-spacing: -.5rem;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
